@@ -29,7 +29,7 @@ function shuffle(array) {
 
     return array;
 }
-/*shuffle(cards);*/
+shuffle(cards);
 
 function afterClick(domDiv) {
     var i = domDiv.getAttribute('data-index');
@@ -51,7 +51,7 @@ var j = true;
 function showTime() {  
     time -= 1;  
 
-    document.getElementById('show-time').innerHTML = 'Time: ' + time +' s';  
+    document.getElementById('show-time').innerHTML = `Time: ${time} s`;  
 
     removestars();
 
@@ -128,9 +128,9 @@ function playOfTheGame() {
     var starstext = null;
 
     if (stars === 1) {
-        starstext = 'You won 1 star with ' + steps + ' steps and left ' + time + ' s.';
+        starstext = `You won 1 star with ${steps} steps and left ${time} s.`;
     } else {
-        starstext = 'You won ' + stars + ' stars with ' + steps + ' steps and left ' + time + ' s.';
+        starstext = `You won ${stars} stars with ${steps} steps and left ${time} s.`;
     }
     
     document.getElementById('dialog-content').innerHTML = starstext;
