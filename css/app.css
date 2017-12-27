@@ -49,6 +49,9 @@ h1 {
     background: linear-gradient(120deg, #02ccbb 0%, #0004ff 100%);
 }
 .card {
+    display: grid !important;  /* 加上 !important 提高权重，避免 fa 增加的 inline-block */
+    align-items: center;
+    justify-content: center;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
